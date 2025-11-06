@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --main-bg-gradient: linear-gradient(
+    135deg,
+    rgb(10, 75, 100) 5%,
+    rgb(120, 185, 215) 15%,
+    rgb(120, 185, 215) 50%,
+    rgb(10, 75, 100) 90%
+  );
+  --sidebar-bg-gradient: linear-gradient(
+    180deg,
+    rgba(44, 111, 138, 1) 120px,
+    rgba(159, 233, 211, 0.7) 250px,
+    rgba(159, 233, 211, 0.5) 96%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  --sidebar-bg: rgba(170, 235, 185, 1);
+  --main-shadow-color: rgba(38, 95, 60, 1);
+  --sidebar-shadow-color: rgba(38, 95, 60, 0.5);
+  --secondary-shadow-color: rgba(38, 95, 60, 0.5);
+  --main-color: rgb(6, 63, 41);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background: var(--main-bg-gradient);
+  box-shadow: var(--main-shadow-color) 0px 12px 18px -8px;
+  z-index: 10;
+}
+
+h1 {
+  color: aliceblue;
+  letter-spacing: 1.2rem;
+  text-shadow: 2px 2px 4px var(--main-shadow-color);
+}
+
+footer {
+  width: 100%;
+  padding: 0 20px 0 0;
+  left: 0;
+  bottom: 0;
+  justify-items: center;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+  width: 70%;
+  box-shadow: var(--secondary-shadow-color) 0 36px 25px -20px;
+  padding: 8px 30px;
+  margin-bottom: 35px;
+  gap: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.footer-wrapper > span {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+.rs-school-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 20px;
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: left;
+  gap: 10px;
+}
+
+.avatar {
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: rgba(145, 237, 175, 0.6) 0px 15px 55px -2px;
+}
+
+aside {
+  height: 100%;
+  padding: 15px 15px 150px 15px;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+#sidebar {
+  width: 360px;
+  color: var(--main-color);
+  box-shadow: var(--main-shadow-color) 12px 0px 25px -25px;
+  z-index: 2;
+  text-shadow: 1px 1px 3px var(--sidebar-shadow-color);
+  background: var(--sidebar-bg-gradient);
+}
+
+#body {
+  flex: 1;
+}
+
+aside > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+
+aside > section > p {
+  margin-bottom: 12px;
+}
+
+h2 {
+  text-indent: 10px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid;
+  color: rgb(25, 105, 100);
+  border-color: rgb(25, 105, 100);
+}
+
+p,
+h2,
+h3,
+h4 {
+  text-align: left;
+  white-space: normal;
+  width: 100%;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+h4 {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  main {
+    justify-content: center;
+  }
+  #sidebar {
+    width: 100%;
+  }
+  h1 {
+    color: aliceblue;
+    letter-spacing: 1rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    color: aliceblue;
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
