@@ -11,24 +11,20 @@
 
 <body>
     <header>
-        <nav>
-            <h1>Curriculum Vitae</h1>
-        </nav>
+        <div class="avatar-container">
+            <img src="public/avatar.jpg" class="avatar" alt="avatar">
+        </div>
+        <div class="header-container">
+            <h1>Merab Kopaleishvili</h1>
+            <p class="occupation">Full-Stack Web Developer</p>
+        </div>
     </header>
     <main>
         <aside id="sidebar">
             <section id="personal-information">
-                <img src="avatar.jpg" class="avatar" alt="avatar">
                 <br>
-                <h2>Personal Information</h2>
+                <h2>Contact Information:</h2>
                 <br>
-                <h3 style="width: 100%">Merab Kopaleishvili</h3>
-                <p>
-                    I'm a beginner <b>Full Stack Developer</b> focused on building
-                    practical experience. Eager to learn and contribute!
-                </p>
-                <br>
-                <h4>Contact Information:</h4>
                 <ul>
                     <li>
                         <b>Address:</b> Petre Kavtaradze Street no.58, Tbilisi
@@ -58,55 +54,85 @@
                     <b>GitHub:</b> <a href="https://github.com/mero93/"> mero93 </a>
                 </p>
                 <h4>Backend:</h4>
-                <ul>
+                <ul class="level-list">
                     <li>
-                        C#
+                        <span class="skill">C#</span>
+                        <span class="level advanced"></span>
                     </li>
                     <li>
-                        ASP.NET
+                        <span class="skill">ASP.NET</span>
+                        <span class="level intermediate"></span>
                     </li>
                     <li>
-                        EF Core
+                        <span class="skill">EF Core</span>
+                        <span class="level intermediate"></span>
                     </li>
                     <li>
-                        AutoMapper
+                        <span class="skill">AutoMapper</span>
+                        <span class="level intermediate"></span>
                     </li>
                     <li>
-                        Microsoft Identity
+                        <span class="skill">Microsoft Identity</span>
+                        <span class="level intermediate"></span>
                     </li>
                     <li>
-                        PostgreSQL
+                        <span class="skill">PostgreSQL</span>
+                        <span class="level intermediate"></span>
                     </li>
                     <li>
-                        Restful API
+                        <span class="skill">Restful API</span>
+                        <span class="level intermediate"></span>
                     </li>
                     <li>
-                        ExpressJs
+                        <span class="skill">ExpressJs</span>
+                        <span class="level intermediate"></span>
                     </li>
                     <li>
-                        NestJs
+                        <span class="skill">NestJs</span>
+                        <span class="level intermediate"></span>
                     </li>
                     <li>
-                        TypeORM
+                        <span class="skill">TypeORM</span>
+                        <span class="level intermediate"></span>
+
                     </li>
                 </ul>
                 <br>
                 <h4>Frontend:</h4>
-                <ul>
+                <ul class="level-list">
                     <li>
-                        JavaScript
+                        <span class="skill">CSS</span>
+                        <span class="level advanced"></span>
                     </li>
                     <li>
-                        TypeScript
+                        <span class="skill">HTML</span>
+                        <span class="level advanced"></span>
                     </li>
                     <li>
-                        Angular
+                        <span class="skill">JavaScript</span>
+                        <span class="level advanced"></span>
                     </li>
                     <li>
-                        Angular Material
+                        <span class="skill">TypeScript</span>
+                        <span class="level advanced"></span>
                     </li>
                     <li>
-                        RxJS
+                        <span class="skill">Angular</span>
+                        <span class="level intermediate"></span>
+                    </li>
+                    <li>
+                        <span class="skill">Angular Material</span>
+                        <span class="level beginner"></span>
+
+                    </li>
+                    <li>
+                        <span class="skill">RxJS</span>
+                        <span class="level intermediate"></span>
+                    </li>
+                    <li>
+                        <span class="skill">React</span>
+                        <span class="level beginner"></span>
+
                     </li>
                 </ul>
                 <br>
@@ -136,6 +162,15 @@
             </section>
         </aside>
         <aside id="body">
+            <section id="description">
+                <h2>Summary</h2>
+                <br>
+                <p>
+                    I'm a beginner <b>Full Stack Developer</b> focused on building
+                    practical experience. Eager to learn and contribute!
+                </p>
+            </section>
+            <br>
             <section id="certification">
                 <h2>Certification</h2>
                 <br>

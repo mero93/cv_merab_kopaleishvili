@@ -1,25 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-  --main-bg-gradient: linear-gradient(
+  --main-bg-color: rgb(137, 129, 129);
+  /* linear-gradient(
     135deg,
     rgb(10, 75, 100) 5%,
     rgb(120, 185, 215) 15%,
     rgb(120, 185, 215) 50%,
     rgb(10, 75, 100) 90%
-  );
-  --sidebar-bg-gradient: linear-gradient(
+  ); */
+  --sidebar-bg-color: rgb(230, 218, 180);
+  /* linear-gradient(
     180deg,
     rgba(44, 111, 138, 1) 120px,
     rgba(159, 233, 211, 0.7) 250px,
     rgba(159, 233, 211, 0.5) 96%,
     rgba(0, 0, 0, 0) 100%
-  );
-  --sidebar-bg: rgba(170, 235, 185, 1);
-  --main-shadow-color: rgba(38, 95, 60, 1);
+  ); */
+  --main-shadow-color: rgb(217, 235, 224);
   --sidebar-shadow-color: rgba(38, 95, 60, 0.5);
   --secondary-shadow-color: rgba(38, 95, 60, 0.5);
   --main-color: rgb(6, 63, 41);
+  --header-height: 200px;
+  --sidebar-width: min(max(30%, 600px), 400px);
+  --empty-bar-color: rgb(158, 178, 183);
+  --beginner-start-color: rgb(44, 215, 192);
+  --beginner-end-color: rgb(8, 171, 125);
+  --intermediate-end-color: rgb(13, 129, 32);
+  --advanced-end-color: rgb(11, 79, 9);
 }
 
 * {
@@ -30,32 +38,82 @@
 }
 
 body {
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   font-family: 'Roboto', sans-serif;
 }
 
-nav {
+header,
+main,
+footer {
+  width: 100%;
+  max-width: 1920px;
+}
+
+header {
+  padding-top: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: var(--header-height);
+  background: var(--main-bg-color);
+  z-index: 10;
+  position: relative;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+header:after {
+  content: '';
+  position: absolute;
+  top: calc(var(--header-height) * 0.99);
+  left: 0;
+  height: 25%;
+  background: var(--main-bg-color);
+  z-index: 10;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  rotate: 180deg;
+  width: var(--sidebar-width);
+}
+
+.header-container {
+  color: aliceblue;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: max-content;
+  text-shadow: 1px 0.5px 5px rgb(79, 81, 80);
+  gap: 20px;
+}
+
+.avatar-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
-  width: 100%;
-  background: var(--main-bg-gradient);
-  box-shadow: var(--main-shadow-color) 0px 12px 18px -8px;
-  z-index: 10;
+  width: var(--sidebar-width);
 }
 
 h1 {
-  color: aliceblue;
-  letter-spacing: 1.2rem;
-  text-shadow: 2px 2px 4px var(--main-shadow-color);
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+.occupation {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 footer {
-  width: 100%;
   padding: 0 20px 0 0;
   left: 0;
   bottom: 0;
   justify-items: center;
+  background: var(--main-bg-color);
+  width: 100%;
 }
 
 .footer-wrapper {
@@ -63,8 +121,7 @@ footer {
   justify-content: space-between;
   align-items: end;
   flex-wrap: wrap;
-  width: 70%;
-  box-shadow: var(--secondary-shadow-color) 0 36px 25px -20px;
+  width: 100%;
   padding: 8px 30px;
   margin-bottom: 35px;
   gap: 10px;
@@ -95,28 +152,26 @@ footer {
 }
 
 main {
-  max-width: 1440px;
   width: 100%;
-  padding: 0 20px;
+  height: 100%;
+  padding-right: 20px;
   margin: auto;
-  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
-  align-items: left;
-  gap: 10px;
+  justify-content: space-around;
+  align-items: stretch;
+  background-color: rgb(243, 238, 233);
+  gap: 20px;
 }
 
 .avatar {
+  /* flex: 1; */
   width: 180px;
   border-radius: 50%;
-  box-shadow: rgba(145, 237, 175, 0.6) 0px 15px 55px -2px;
 }
 
 aside {
-  height: 100%;
-  padding: 15px 15px 150px 15px;
-  min-width: 360px;
+  padding: calc(var(--header-height) * 0.25) 15px 150px 15px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -124,16 +179,15 @@ aside {
 }
 
 #sidebar {
-  width: 360px;
+  width: var(--sidebar-width);
   color: var(--main-color);
-  box-shadow: var(--main-shadow-color) 12px 0px 25px -25px;
   z-index: 2;
-  text-shadow: 1px 1px 3px var(--sidebar-shadow-color);
-  background: var(--sidebar-bg-gradient);
+  background: var(--sidebar-bg-color);
 }
 
 #body {
   flex: 1;
+  min-width: 400px;
 }
 
 aside > section {
@@ -149,7 +203,6 @@ aside > section > p {
 }
 
 h2 {
-  text-indent: 10px;
   padding-bottom: 5px;
   border-bottom: 3px solid;
   color: rgb(25, 105, 100);
@@ -165,31 +218,101 @@ h4 {
   width: 100%;
 }
 
-ul {
-  padding-left: 20px;
-}
-
 h4 {
   margin-bottom: 6px;
 }
 
-@media (max-width: 768px) {
+ul {
+  width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.level-list > li {
+  padding: 0.3rem 0;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+
+.skill {
+  min-width: 180px;
+  width: 60%;
+  white-space: wrap;
+}
+
+.level {
+  margin-left: 20px;
+  width: 40%;
+  min-width: 120px;
+  height: 1rem;
+  background-color: var(--empty-bar-color);
+  border: 1px solid rgb(20, 108, 28);
+}
+
+.level.beginner {
+  background-image: linear-gradient(
+    90deg,
+    var(--beginner-start-color) 0%,
+    var(--beginner-end-color) 33%,
+    var(--empty-bar-color) 33%,
+    var(--empty-bar-color) 100%
+  );
+}
+
+.level.intermediate {
+  background-image: linear-gradient(
+    90deg,
+    var(--beginner-start-color) 0%,
+    var(--beginner-end-color) 33%,
+    var(--intermediate-end-color) 66%,
+    var(--empty-bar-color) 66%,
+    var(--empty-bar-color) 100%
+  );
+}
+
+.level.advanced {
+  background-image: linear-gradient(
+    90deg,
+    var(--beginner-start-color) 0%,
+    var(--beginner-end-color) 33%,
+    var(--intermediate-end-color) 66%,
+    var(--advanced-end-color) 100%
+  );
+}
+
+@media (max-width: 960px) {
+  :root {
+    --sidebar-width: 100vw;
+    --header-height: 100%;
+  }
+  header {
+    gap: 15px;
+  }
   main {
     justify-content: center;
+    padding: 0;
+    gap: 10px;
   }
-  #sidebar {
-    width: 100%;
-  }
-  h1 {
-    color: aliceblue;
-    letter-spacing: 1rem;
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 480px) {
   h1 {
     color: aliceblue;
     letter-spacing: 0.5rem;
     font-size: 1.5rem;
+  }
+  #body {
+    padding: 15px;
+  }
+  .header-container {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .header-container > h1,
+  .header-container > p {
+    text-align: center;
   }
 }
