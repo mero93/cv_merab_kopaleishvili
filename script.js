@@ -320,7 +320,7 @@ function createCertificateSection() {
 function createTrainingCodingExperience() {
   const trainingSection = document.createElement('section');
 
-  const header = createHeaderWithIcon('fa-globe', ' Trainings and Coding Experience:');
+  const header = createHeaderWithIcon('fa-book-open', ' Trainings and Coding Experience:');
   trainingSection.appendChild(header);
 
   for (const training in trainings) {
@@ -338,10 +338,7 @@ function createTrainingCodingExperience() {
 function createGeneralEducation() {
   const educationSection = document.createElement('section');
 
-  const header = createHeaderWithIcon(
-    'fa-graduation-cap',
-    "Magister's Degree in Civil Engineering:",
-  );
+  const header = createHeaderWithIcon('fa-graduation-cap', 'General Education:');
   educationSection.appendChild(header);
 
   for (const education in educations) {
