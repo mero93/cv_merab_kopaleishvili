@@ -64,7 +64,7 @@ const fullstackApps = [
   {
     name: 'Book Store app',
     description:
-      'Catalog App for book store. Application is part of EPAM Java training course. <br><b>Stack:<b> Java, Spring Framework, H2 in-memory database, Angular, Angular Material',
+      'Catalog App for book store. Application is part of EPAM Java training course. <br><b>Stack:</b> Java, Spring Framework, H2 in-memory database, Angular, Angular Material',
     repoLink: 'https://github.com/mero93/java-angular-bookstore-app',
   },
 ];
@@ -438,7 +438,7 @@ function createApp(data) {
   if (data.repoLink) {
     const appRepoLink = document.createElement('a');
     appRepoLink.href = data.repoLink;
-    appRepoLink.innerText = 'Repo Link';
+    appRepoLink.innerText = 'Repo link';
     app.appendChild(appRepoLink);
   }
 

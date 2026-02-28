@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-  --page-background-color: rgb(228, 237, 241);
+  --page-background-color: rgb(242, 246, 248);
   --main-shadow-color: rgb(217, 235, 224);
   --border-color: rgb(189, 210, 219);
   --accent-color: rgb(46, 101, 133);
@@ -33,7 +33,6 @@ footer {
 }
 
 header {
-  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,15 +242,21 @@ section {
     grid-template-columns: repeat(4, auto);
   }
 
-  @media (prefers-color-scheme: dark) {
-    .main-section {
-      border-right: 3px solid var(--border-color);
-    }
+  .main-section {
+    border-right: 3px solid var(--border-color);
   }
 }
 
 @media (max-width: 640px) {
   .contact-info {
     grid-template-columns: repeat(1, auto);
+  }
+
+  html {
+    font-size: 12px;
+  }
+
+  aside {
+    padding: 0;
   }
 }
