@@ -54,6 +54,15 @@ const educations = [
 
 const fullstackApps = [
   {
+    name: 'JS Interview Trainer (Team Project)',
+    hostedLink: 'https://rs-tandem.vercel.app/',
+    hostedLinkText: 'JS Interview Trainer',
+    description:
+      'JS Interview Trainer is an interactive JavaScript training platform with modular widgets. It provides hands-on exercises, tracks performance in real-time, and helps learners improve efficiently.My main responsibilities were: supabase BaaS, authorization, localization, CRUD page (admin panel)',
+    repoLink: 'https://github.com/tosigaeva/rs-tandem',
+    videoDemo: 'https://www.loom.com/share/548ae3da518b487daa0bce12a91a9d49',
+  },
+  {
     name: 'E-Commerce app:',
     hostedLink: 'https://techno-eshop-d7f6c2d02709.herokuapp.com/',
     hostedLinkText: 'techno-eshop',
