@@ -158,7 +158,7 @@ const skillData = [
   {
     name: 'Database',
     icon: 'fa-database',
-    skills: ['PostgreSQL', 'H2'],
+    skills: ['PostgreSQL', 'SQLite','H2'],
   },
   {
     name: 'Tools',
