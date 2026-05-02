@@ -44,6 +44,7 @@ web design
 [_repository_](https://github.com/mero93/momentum-project)
 
 ## Trainings and Coding Experience
+
 **GITA International Certification Program, New Horizons
 Bulgaria Angular Frontend Programming:**  
 Main subjects of Training: Javascript, Typescript, Angular
@@ -63,7 +64,6 @@ _FEB 2022 – AUG 2023_
 **Magister’s Degree in Civil Engineering:**  
 Agricultural University of Georgia, Tbilisi, Georgia  
 _SEPT 2020 – JUL 2022_
-
 
 **Bachelor’s Degree in Civil Engineering:**  
 Agricultural University of Georgia, Tbilisi, Georgia  

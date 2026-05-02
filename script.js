@@ -9,71 +9,81 @@ const certificates = [
   },
 ];
 
-const trainings = [
+const educationAndTraining = [
   {
-    name: 'RS School JS / Front-end:',
-    description:
-      'Main subjects of Training: Javascript, Typescript, Angular/NextJS framework, functional programming, object-oriented programming, design patterns,clean code principles,course project: interactive, AI-aided app for JS, TS training/preparing for interview',
+    name: 'RS School JS / Frontend',
+    description: 'Vanilla JavaScript, HTML, CSS, Typescript, NextJS',
     date: 'September 9th, 2025 - Mar 17th, 2026',
   },
   {
-    name: 'EPAM [Fundamentals] Java, WCA #21:',
-    description:
-      'Main subjects of Training: Java, object-oriented programming, Spring framework, Spring Boot, different design patterns, designing MVC projects, RESTful API, course Project: Book Store App',
+    name: 'EPAM [Fundamentals] Java, WCA #21',
+    description: 'OOP, Java, Spring Framework, MVC, Database',
     date: 'Oct 17th, 2025 - Feb 23rd, 2026',
   },
   {
-    name: 'GITA International Certification Program, New Horizons Bulgaria Angular Frontend Programming:',
-    description:
-      'Main subjects of Training: Javascript, Typescript, Angular framework, designing app with RESTful API and Angular client',
+    name: 'GITA International Certification Program',
+    description: 'Angular, Angular Material',
     date: 'Oct 2024 - Feb 2025',
   },
   {
-    name: 'EPAM Full-Stack Web-Development Boot Camp:',
-    description:
-      'Main subjects of Training: C#, object-oriented programming, ASP.NET, different design patterns, designing MVC projects, RESTful API, designing app with ASP.NET api and Angular client',
+    name: 'EPAM Full-Stack Web-Development Boot Camp',
+    description: 'C#, .NET, ASP.NET, MVC, API, Angular',
     date: 'Feb 2022 - Aug 2023',
   },
-];
-
-const educations = [
   {
     name: 'Agricultural University of Georgia, Tbilisi, Georgia',
+    description: 'Masters Degree in Civil Engineering',
     date: 'Sept 2020 - Jul 2022',
   },
   {
     name: 'Agricultural University of Georgia, Tbilisi, Georgia',
+    description: 'Bachelors Degree in Civil Engineering',
     date: 'Oct 2012 - Jun 2017',
   },
   {
-    name: 'Erasmus Mundus Education Program “Infinity”:',
-    description: 'School of Architecture of University of Lisbon, Lisbon, Portugal',
+    name: 'Erasmus Mundus Education Program “Infinity”',
     date: 'Sept 2014 - Jul 2015',
   },
 ];
 
-const fullstackApps = [
+const highlightApps = [
   {
-    name: 'JS Interview Trainer (Team Project)',
+    name: 'JS Interview Trainer',
     hostedLink: 'https://rs-tandem.vercel.app/',
-    hostedLinkText: 'JS Interview Trainer',
     description:
-      'JS Interview Trainer is an interactive JavaScript training platform with modular widgets. It provides hands-on exercises, tracks performance in real-time, and helps learners improve efficiently.My main responsibilities were: supabase BaaS, authorization, localization, CRUD page (admin panel)',
+      'Interactive learning platform for JavaScript and TypeScript interview preparation.',
+    stack: ['Angular', 'TypeScript', 'Supabase'],
+    workDone: [
+      'Implemented Supabase-based authentication and admin CRUD functionality',
+      'Added localization features for the Angular application',
+      'Developed admin panel functionality for content and data management',
+    ],
     repoLink: 'https://github.com/tosigaeva/rs-tandem',
     videoDemo: 'https://www.loom.com/share/548ae3da518b487daa0bce12a91a9d49',
   },
   {
-    name: 'E-Commerce app:',
+    name: 'E-Commerce App (Techno-Eshop)',
     hostedLink: 'https://techno-eshop-d7f6c2d02709.herokuapp.com/',
-    hostedLinkText: 'techno-eshop',
     description:
-      'E-Commerce App with general products. Each product can have any set of attributes and to enforce uniformity admin role can use prototypes. <br><b>Stack:</b> ASP.NET, PostgreSQL, Angular, Angular Material',
+      'Full-stack e-commerce application with flexible product attributes and admin-side prototypes.',
+    stack: ['ASP.NET', 'PostgreSQL', 'Angular', 'Angular Material'],
+    workDone: [
+      'Built full-stack e-commerce features using Angular, ASP.NET, and PostgreSQL',
+      'Implemented product and attribute management functionality',
+      'Integrated Angular frontend with backend REST APIs',
+    ],
     repoLink: 'https://github.com/mero93/technoEShop',
   },
   {
-    name: 'Book Store app',
-    description:
-      'Catalog App for book store. Application is part of EPAM Java training course. <br><b>Stack:</b> Java, Spring Framework, H2 in-memory database, Angular, Angular Material',
+    name: 'Book Store App',
+    hostedLink: '',
+    description: 'Catalog application created as part of Java training course.',
+    stack: ['Java', 'Spring Framework', 'Angular', 'Angular Material', 'H2'],
+    workDone: [
+      'Built bookstore catalog features using Java Spring and Angular',
+      'Integrated Angular client with backend REST APIs',
+      'Contributed to backend and frontend application modules',
+    ],
     repoLink: 'https://github.com/mero93/java-angular-bookstore-app',
   },
 ];
@@ -124,50 +134,52 @@ const frontendApps = [
   },
 ];
 
-const skillData = {
-  frontEnd: {
-    sectionName: 'Front-End',
-    sectionIcon: 'fa-code',
+const skillData = [
+  {
+    name: 'Frontend',
+    icon: 'fa-code',
     skills: [
-      { name: 'HTML', progress: 'progress-100' },
-      { name: 'CSS', progress: 'progress-100' },
-      { name: 'JavaScript', progress: 'progress-100' },
-      { name: 'Typescript', progress: 'progress-100' },
-      { name: 'Angular', progress: 'progress-80' },
-      { name: 'Angular Material', progress: 'progress-60' },
-      { name: 'RxJS', progress: 'progress-60' },
-      { name: 'React', progress: 'progress-40' },
-      { name: 'NextJS', progress: 'progress-40' },
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'TypeScript',
+      'Angular',
+      'RxJS',
+      'Angular Material',
+      'React',
+      'Next.js',
     ],
   },
-  backEnd: {
-    sectionName: 'Back-End',
-    sectionIcon: 'fa-code',
+  {
+    name: 'Backend',
+    icon: 'fa-laptop-code',
+    skills: ['C#', 'Java', 'ASP.NET', 'Spring', 'Spring Boot', 'Express.js', 'NestJS', 'REST API'],
+  },
+  {
+    name: 'Database',
+    icon: 'fa-database',
+    skills: ['PostgreSQL', 'H2'],
+  },
+  {
+    name: 'Tools',
+    icon: 'fa-screwdriver-wrench',
     skills: [
-      { name: 'C#', progress: 'progress-80' },
-      { name: 'ASP.NET', progress: 'progress-60' },
-      { name: 'EF Core', progress: 'progress-80' },
-      { name: 'AutoMapper', progress: 'progress-80' },
-      { name: 'Microsoft Identity', progress: 'progress-60' },
-      { name: 'PostgreSQL', progress: 'progress-60' },
-      { name: 'Restful API', progress: 'progress-80' },
-      { name: 'ExpressJS', progress: 'progress-40' },
-      { name: 'NestJS', progress: 'progress-40' },
-      { name: 'TypeORM', progress: 'progress-40' },
-      { name: 'Java', progress: 'progress-60' },
-      { name: 'Spring', progress: 'progress-40' },
+      'Git',
+      'EF Core',
+      'TypeORM',
+      'AutoMapper',
+      'Microsoft Identity',
+      'Supabase',
+      'WebSocket',
     ],
   },
-  languages: {
-    sectionName: 'Languages',
-    sectionIcon: 'fa-language',
-    skills: [
-      { name: 'Georgian', progress: 'progress-100' },
-      { name: 'English', progress: 'progress-80' },
-      { name: 'Russian', progress: 'progress-60' },
-    ],
-  },
-};
+];
+
+const languages = [
+  { name: 'Georgian', level: 'Native' },
+  { name: 'English', level: 'Fluent' },
+  { name: 'Russian', level: 'Advanced' },
+];
 
 function initializePage() {
   createHeader();
@@ -178,352 +190,286 @@ function initializePage() {
 initializePage();
 
 function createHeader() {
+  console.log('creating header');
   const header = document.createElement('header');
-
-  const avatarContainer = createAvatar();
 
   const name = document.createElement('h1');
   name.innerText = 'Merab Kopaleishvili';
 
   const occupation = document.createElement('p');
-  occupation.innerText = 'Full-Stack Web Developer';
+  occupation.innerText = 'Junior Full-Stack Developer';
   occupation.classList.add('occupation');
 
   const contactInfo = createContactInfo();
 
-  header.append(avatarContainer, name, occupation, contactInfo);
+  header.append(name, occupation, contactInfo);
 
   body.appendChild(header);
 }
 
-function createAvatar() {
-  const avatarContainer = document.createElement('div');
-  avatarContainer.classList.add('avatar-container');
-
-  const avatar = document.createElement('img');
-  avatar.classList.add('avatar');
-  avatar.src = 'public/avatar.jpg';
-
-  avatarContainer.appendChild(avatar);
-
-  return avatarContainer;
-}
-
 function createContactInfo() {
   const contactInfo = document.createElement('div');
-  contactInfo.classList.add('contact-info');
+  contactInfo.classList.add('delimited-list');
 
   const infoData = [
-    { icon: ['fa-phone'], link: 'tel:+995577442859', text: '+995 57 744 2859' },
+    { pretext: 'Tbilisi, Georgia' },
+    { link: 'tel:+995577442859', text: '+995 577 44 28 59' },
     {
-      icon: ['fa-envelope'],
       link: 'mailto:merabkopaleishvili1993@gmail.com/',
       text: 'merabkopaleishvili1993@gmail.com',
     },
-    { icon: ['fa-brands', 'fa-github'], link: 'https://github.com/mero93/', text: 'mero93' },
+    { link: 'https://github.com/mero93/', pretext: 'GitHub:', text: 'mero93' },
 
     {
-      icon: ['fa-brands', 'fa-linkedin'],
       link: 'https://www.linkedin.com/in/m-kopaleishvili/',
+      pretext: 'LinkedIn:',
       text: 'linkedin.com/in/m-kopaleishvili',
     },
   ];
 
-  for (const info in infoData) {
-    const infoPiece = createContactInfoPiece(
-      infoData[info].icon,
-      infoData[info].link,
-      infoData[info].text,
-    );
+  for (const info of infoData) {
+    const infoPiece = createContactInfoPiece(info);
     contactInfo.appendChild(infoPiece);
   }
 
   return contactInfo;
 }
 
-function createContactInfoPiece(icons, link, text) {
-  const infoLink = document.createElement('a');
-  infoLink.href = link;
+function createContactInfoPiece({ link, pretext, text }) {
+  console.log(link, pretext, text);
+  let infoLink;
+  if (link && text) {
+    infoLink = document.createElement('a');
+    infoLink.href = link ?? '';
 
-  const infoIcon = document.createElement('i');
-  infoIcon.classList.add('fa-solid');
-
-  for (const icon of icons) {
-    infoIcon.classList.add(icon);
+    const infoText = document.createElement('h4');
+    infoText.innerText = text ?? '';
+    infoLink.append(infoText);
   }
 
-  const infoText = document.createElement('h4');
-  infoText.innerText = text;
+  let pretextElement;
+  if (pretext) {
+    pretextElement = document.createElement('span');
+    pretextElement.innerText = pretext ?? '';
+  }
 
-  infoLink.append(infoIcon, infoText);
+  const contactInfo = document.createElement('div');
+  contactInfo.classList.add('contact-info');
+  if (pretextElement) contactInfo.append(pretextElement);
+  if (infoLink) contactInfo.append(infoLink);
 
-  return infoLink;
+  return contactInfo;
 }
 
 function createMain() {
   const main = document.createElement('main');
 
-  const mainSection = createMainSection();
-  const sidebar = createSidebar();
-
-  main.append(mainSection, sidebar);
-
   body.appendChild(main);
-}
 
-function createMainSection() {
-  const mainSection = document.createElement('aside');
-  mainSection.classList.add('main-section');
+  const summarySection = createSummarySection();
+  const skillSection = createSkillSection();
+  const projectHighlights = createProjectHighlights();
+  const educationAndTrainingSection = createEducationAndTraining();
+  const languageSection = createLanguages();
 
-  const aboutSection = createAboutMeSection();
-  const certificationSection = createCertificateSection();
-  const trainingSection = createTrainingCodingExperience();
-  const generalEducationSection = createGeneralEducation();
-  const fullstackAppSection = createFullstackApps();
-  const frontendAppSection = createFrontendApps();
-
-  mainSection.append(
-    aboutSection,
-    certificationSection,
-    trainingSection,
-    fullstackAppSection,
-    frontendAppSection,
-    generalEducationSection,
+  main.append(
+    summarySection,
+    skillSection,
+    projectHighlights,
+    educationAndTrainingSection,
+    languageSection,
   );
-
-  return mainSection;
 }
 
-function createAboutMeSection() {
+function createSummarySection() {
   const about = document.createElement('section');
 
-  const header = createHeaderWithIcon('fa-user', 'About Me:');
+  const header = document.createElement('h2');
+  header.innerText = 'Summary';
 
   const text = document.createElement('p');
-  text.innerHTML = `I'm a beginner <b>Full Stack Developer</b> focused on building
-                    practical experience. Eager to learn and contribute!`;
+  text.innerHTML = `Junior Full-Stack Developer with hands-on experience in Angular, TypeScript, ASP.NET, Java Spring, and PostgreSQL
+through technical training and project work. Built web applications with authentication, localization, CRUD functionality,
+REST API integration, and admin workflows. Seeking an entry-level software development role focused on modern web
+applications.`;
 
   about.append(header, text);
 
   return about;
 }
 
-function createCertificateSection() {
-  const certificateSection = document.createElement('section');
-
-  const header = createHeaderWithIcon('fa-certificate', 'Certification:');
-  certificateSection.appendChild(header);
-
-  for (const certificate in certificates) {
-    const certificateElement = createCertificate(
-      certificates[certificate].name,
-      certificates[certificate].description,
-      certificates[certificate].date,
-    );
-    certificateSection.appendChild(certificateElement);
-  }
-
-  return certificateSection;
-}
-
-function createTrainingCodingExperience() {
-  const trainingSection = document.createElement('section');
-
-  const header = createHeaderWithIcon('fa-book-open', ' Trainings and Coding Experience:');
-  trainingSection.appendChild(header);
-
-  for (const training in trainings) {
-    const trainingElement = createCertificate(
-      trainings[training].name,
-      trainings[training].description,
-      trainings[training].date,
-    );
-    trainingSection.appendChild(trainingElement);
-  }
-
-  return trainingSection;
-}
-
-function createGeneralEducation() {
+function createEducationAndTraining() {
   const educationSection = document.createElement('section');
 
-  const header = createHeaderWithIcon('fa-graduation-cap', 'General Education:');
+  const header = document.createElement('h2');
+  header.innerText = 'Education and Training';
   educationSection.appendChild(header);
 
-  for (const education in educations) {
-    const educationElement = createCertificate(
-      educations[education].name,
-      educations[education].description,
-      educations[education].date,
-    );
-    educationSection.appendChild(educationElement);
+  for (const education of educationAndTraining) {
+    const trainingElement = createEducation(education);
+    educationSection.appendChild(trainingElement);
   }
 
   return educationSection;
 }
 
-function createFullstackApps() {
-  const fullstackAppSection = document.createElement('section');
+function createEducation({ name, description, date }) {
+  const entry = document.createElement('span');
 
-  const header = createHeaderWithIcon('fa-globe', 'Full Stack Apps:');
-  fullstackAppSection.appendChild(header);
+  const nameText = `<b>${name}</b> - `;
+  const descriptionText = description ? `${description} - ` : '';
+  const dateText = `<i>${date}</i>`;
 
-  for (const app in fullstackApps) {
-    const appElement = createApp(fullstackApps[app]);
-    fullstackAppSection.appendChild(appElement);
-  }
+  entry.innerHTML = nameText + descriptionText + dateText;
 
-  return fullstackAppSection;
+  return entry;
 }
 
-function createFrontendApps() {
-  const frontendAppSection = document.createElement('section');
+function createProjectHighlights() {
+  const highlightAppSection = document.createElement('section');
 
-  const header = createHeaderWithIcon('fa-file-code', ' Front-end Apps:');
-  frontendAppSection.appendChild(header);
+  const header = document.createElement('h2');
+  header.innerText = 'Project Highlights';
+  highlightAppSection.appendChild(header);
 
-  for (const app in frontendApps) {
-    const appElement = createApp(frontendApps[app]);
-    frontendAppSection.appendChild(appElement);
+  for (const app of highlightApps) {
+    const appElement = createApp(app);
+    highlightAppSection.appendChild(appElement);
   }
 
-  return frontendAppSection;
+  return highlightAppSection;
 }
 
-function createApp(data) {
+function createApp({ name, hostedLink, description, stack, workDone, repoLink, videoDemo }) {
   const app = document.createElement('div');
   app.classList.add('app-container');
 
   const appHeader = document.createElement('div');
-  appHeader.classList.add('app-line');
+  const titleElement = document.createElement('h3');
+  titleElement.innerText = name;
 
-  const appTitle = document.createElement('h4');
-  appTitle.innerText = data.name;
-  appHeader.appendChild(appTitle);
-
-  if (data.hostedLink) {
-    const appLink = document.createElement('a');
-    appLink.href = data.hostedLink;
-    appLink.innerText = data.hostedLinkText ?? 'Link';
-    appHeader.appendChild(appLink);
+  if (hostedLink) {
+    const titleLink = document.createElement('a');
+    titleLink.href = hostedLink;
+    titleLink.target = '_blank';
+    titleLink.appendChild(titleElement);
+    appHeader.appendChild(titleLink);
+  } else {
+    appHeader.appendChild(titleElement);
   }
+  app.appendChild(appHeader);
 
-  app.append(appHeader);
-
-  if (data.description) {
+  if (description) {
     const appDescription = document.createElement('p');
-    appDescription.innerHTML = data.description;
+    appDescription.innerHTML = description;
     app.appendChild(appDescription);
   }
 
-  if (data.additionalResourceLink) {
-    const resourceLine = document.createElement('div');
-    resourceLine.classList.add('app-line');
-    const appAdditionalResource = document.createElement('p');
-    appAdditionalResource.innerText = data.additionalResourceText ?? 'Additional Resources: ';
+  if (workDone && workDone.length > 0 && workDone[0] !== '') {
+    const ul = document.createElement('ul');
+    ul.classList.add('work-done-list');
 
-    const appAdditionalResourceLink = document.createElement('a');
-    appAdditionalResourceLink.href = data.additionalResourceLink;
-    appAdditionalResourceLink.innerText = 'Link';
-
-    resourceLine.append(appAdditionalResource, appAdditionalResourceLink);
-    app.appendChild(resourceLine);
+    workDone.forEach((point) => {
+      const li = document.createElement('li');
+      li.innerText = point;
+      ul.appendChild(li);
+    });
+    app.appendChild(ul);
   }
 
-  if (data.videoDemo) {
-    const videoDemoLine = document.createElement('div');
-    videoDemoLine.classList.add('app-line');
-    const appVideoDemo = document.createElement('p');
-    appVideoDemo.innerText = 'Video Demo: ';
+  if (stack && stack.length > 0) {
+    const stackContainer = document.createElement('div');
+    stackContainer.classList.add('app-line');
 
-    const appVideoDemoLink = document.createElement('a');
-    appVideoDemoLink.href = data.videoDemo;
-    appVideoDemoLink.innerText = 'video';
+    const stackLabel = document.createElement('b');
+    stackLabel.innerText = 'Stack:';
 
-    videoDemoLine.append(appVideoDemo, appVideoDemoLink);
-    app.appendChild(videoDemoLine);
+    const stackList = document.createElement('span');
+    stackList.classList.add('delimited-list');
+
+    stack.forEach((tech) => {
+      const item = document.createElement('span');
+      item.innerText = tech;
+      stackList.appendChild(item);
+    });
+
+    stackContainer.append(stackLabel, stackList);
+    app.appendChild(stackContainer);
   }
 
-  if (data.repoLink) {
-    const appRepoLink = document.createElement('a');
-    appRepoLink.href = data.repoLink;
-    appRepoLink.innerText = 'Repo link';
-    app.appendChild(appRepoLink);
+  if (repoLink || videoDemo) {
+    const linksRow = document.createElement('div');
+    linksRow.classList.add('app-line');
+    linksRow.style.display = 'flex';
+    linksRow.style.gap = '5px';
+
+    const linksLabel = document.createElement('b');
+    linksLabel.innerText = 'Links: ';
+    linksRow.appendChild(linksLabel);
+
+    const linksContainer = document.createElement('div');
+    linksContainer.classList.add('delimited-list');
+
+    if (repoLink) {
+      const repoA = document.createElement('a');
+      repoA.href = repoLink;
+      repoA.innerText = 'GitHub';
+      repoA.target = '_blank';
+      linksContainer.appendChild(repoA);
+    }
+
+    if (videoDemo) {
+      const demoA = document.createElement('a');
+      demoA.href = videoDemo;
+      demoA.innerText = 'Demo';
+      demoA.target = '_blank';
+      linksContainer.appendChild(demoA);
+    }
+
+    linksRow.appendChild(linksContainer);
+    app.appendChild(linksRow);
   }
 
   return app;
 }
 
-function createCertificate(name, description, date) {
-  const certificate = document.createElement('div');
-
-  const certificateName = document.createElement('h4');
-  certificateName.innerText = name;
-  certificate.appendChild(certificateName);
-
-  if (description) {
-    const certificateDescription = document.createElement('p');
-    certificateDescription.innerText = description;
-    certificate.appendChild(certificateDescription);
-  }
-
-  const certificateDate = document.createElement('p');
-  certificateDate.classList.add('date');
-  certificateDate.innerText = date;
-
-  certificate.appendChild(certificateDate);
-
-  return certificate;
-}
-
-function createSidebar() {
-  const sidebar = document.createElement('aside');
-  sidebar.classList.add('sidebar');
-
-  for (const key in skillData) {
-    const skillList = createSkillList(
-      skillData[key].sectionIcon,
-      skillData[key].sectionName,
-      skillData[key].skills,
-    );
-    sidebar.append(skillList);
-  }
-
-  return sidebar;
-}
-
-function createSkillList(icon, text, skills) {
+function createSkillSection() {
   const section = document.createElement('section');
 
-  const header = createHeaderWithIcon(icon, text);
-  section.append(header);
+  const header = document.createElement('h2');
+  header.innerText = 'Technical Skills';
 
-  for (const skill in skills) {
-    const skillWrapper = createSkill(skills[skill]);
-    section.append(skillWrapper);
+  const skillSection = document.createElement('div');
+  skillSection.classList.add('skill-section');
+
+  for (const data of skillData) {
+    const skillList = createSkillList(data);
+    skillSection.append(skillList);
   }
+
+  section.append(header, skillSection);
 
   return section;
 }
 
-function createSkill(skill) {
-  const wrapper = document.createElement('div');
-  wrapper.classList.add('skill-wrapper');
+function createSkillList({ icon, name, skills }) {
+  const entry = document.createElement('div');
+  entry.classList.add('skill-list');
 
-  const skillName = document.createElement('h4');
-  skillName.innerText = skill.name;
+  const header = createHeaderWithIcon(icon, name);
+  entry.append(header);
 
-  const skillProgress = document.createElement('span');
-  skillProgress.classList.add('skill-progress');
-  skillProgress.classList.add(skill.progress);
+  const skillList = document.createElement('p');
+  skillList.innerText = skills.join(', ');
+  entry.append(skillList);
 
-  wrapper.append(skillName, skillProgress);
-
-  return wrapper;
+  return entry;
 }
 
 function createFooter() {
   const footer = document.createElement('footer');
+
+  return footer;
 }
 
 function createHeaderWithIcon(icon, text) {
@@ -531,16 +477,32 @@ function createHeaderWithIcon(icon, text) {
   headerWithIcon.classList.add('header-with-icon');
 
   const iconElement = document.createElement('i');
-  iconElement.classList.add('fa-solid', 'filled-icon');
-  iconElement.classList.add(icon);
+  iconElement.classList.add('fa-solid', 'filled-icon', icon);
 
-  const header = document.createElement('h2');
+  const header = document.createElement('h3');
   header.innerText = text;
 
-  const divider = document.createElement('span');
-  divider.classList.add('inline-divider');
-
-  headerWithIcon.append(iconElement, header, divider);
+  headerWithIcon.append(iconElement, header);
 
   return headerWithIcon;
+}
+
+function createLanguages() {
+  const section = document.createElement('section');
+
+  const header = document.createElement('h2');
+  header.innerText = 'Languages';
+
+  const languageContainer = document.createElement('div');
+  languageContainer.classList.add('delimited-list');
+
+  for (let language of languages) {
+    const languageDisplay = document.createElement('span');
+    languageDisplay.innerText = `${language.name} - ${language.level}`;
+    languageContainer.append(languageDisplay);
+  }
+
+  section.append(header, languageContainer);
+
+  return section;
 }
